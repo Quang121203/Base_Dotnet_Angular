@@ -1,0 +1,34 @@
+<div class="listItem" (mouseenter)='over()' (mouseleave)='out()'>
+    <img src="https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU7D36jL6KiLG1xI8Xg_cZK-hYQj1L8yRxbQuB0rcLCnAk8AhEK5EM83QI71bRHUm0qOYxonD88gaThgDaPu7NuUfRg.jpg?r=4ee"
+        alt="" />
+
+    <div *ngIf="isHovered">
+        <video [src]="trailer" autoPlay={true} loop></video>
+        <div class="itemInfo">
+            <div class="icons">
+                <mat-icon aria-hidden="false" fontIcon="play_arrow" class="icon"></mat-icon>
+                <mat-icon aria-hidden="false" fontIcon="add" class="icon"></mat-icon>
+                <mat-icon aria-hidden="false" fontIcon="thumb_up" class="icon"></mat-icon>
+                <mat-icon aria-hidden="false" fontIcon="thumb_down" class="icon"></mat-icon>
+            </div>
+            <div class="itemInfoTop">
+                <span>1 hour 14 mins</span>
+                <span class="limit">+16</span>
+                <span>1999</span>
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium hic rem eveniet error possimus, neque ex doloribus.
+            </div>
+            <div class="genre">Action </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- <div class="listItem">
+    <img src="https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU7D36jL6KiLG1xI8Xg_cZK-hYQj1L8yRxbQuB0rcLCnAk8AhEK5EM83QI71bRHUm0qOYxonD88gaThgDaPu7NuUfRg.jpg?r=4ee"
+        alt="" />
+</div> -->

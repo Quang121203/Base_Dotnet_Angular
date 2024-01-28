@@ -1,0 +1,32 @@
+<div class="register">
+    <div class="top">
+        <div class="wrapper">
+            <img class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+                alt="" />
+            <button class="loginButton">Sign In</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <p>
+            Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <div class="input" *ngIf="!email">
+            <input type="email" placeholder="email address" [(ngModel)]="inputEmail"/>
+            <button class="registerButton" (click)="handleClick()">
+                Get Started
+            </button>
+        </div>
+
+        <form class="input" *ngIf="email">
+            <input type="password" placeholder="password" />
+            <button class="registerButton">
+                Start
+            </button>
+        </form>
+
+    </div>
+</div>
